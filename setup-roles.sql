@@ -17,3 +17,5 @@ CREATE ROLE migration;
 GRANT migration TO postgres, v_admin, apps, engineers;
 
 GRANT rds_superuser to v_admin, vault_postgres, exporter;
+
+CREATE EXTENSION IF NOT EXISTS pg_stat_statements WITH SCHEMA public;
