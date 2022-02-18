@@ -14,7 +14,7 @@ CREATE ROLE vault_postgres WITH CREATEROLE LOGIN;
 
 CREATE ROLE migration;
 
-GRANT migration TO vault_postgres, v_admin, apps, engineers;
+GRANT migration TO vault_postgres, v_admin, apps, engineers, flazz;
 
 GRANT rds_superuser to v_admin, vault_postgres, exporter;
 
